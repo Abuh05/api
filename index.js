@@ -29,6 +29,7 @@ app.use("/api/users", usersRoute);
 app.use("/api/rooms", roomsRoute);
 app.use("/api/hotels", hotelsRoute);
 
+<<<<<<< HEAD
 app.use((err, req, res, next) => {
  const errorStatus = err.status || 500;
  const errorMessage = err.message || "Something ent wrong";
@@ -39,6 +40,8 @@ app.use((err, req, res, next) => {
  });
 })
 
+=======
+>>>>>>> 825a2f5ea7a06c8bae89ca5c0feae1bd37214d29
 app.listen(8000, () => {
   connect();
   console.log("Connected to backend");
